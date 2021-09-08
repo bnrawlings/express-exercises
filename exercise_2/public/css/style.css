@@ -1,0 +1,23 @@
+h1{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.movieImg{
+    width: 130px;
+    height: 150px;
+}
+img:hover {
+    width: 350px;
+    height: 450px;
+    
+}
+.movieCon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    border-bottom: double teal;
+}

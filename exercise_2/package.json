@@ -12,5 +12,6 @@
     "express-es6-template-engine": "^2.2.3"
   },
   "keywords": [],
+  "devDependencies": {},
   "description": ""
 }

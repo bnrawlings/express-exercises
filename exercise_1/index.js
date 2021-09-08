@@ -1,28 +1,33 @@
-const PORT = 3000
-const express = require("express")
-const app = express()
+const PORT = 3000;
+const express = require("express");
+const app = express();
 
-app("/", (req,res)=>{
-    res(console.log("Why hello there!"))
-})
+// app.get("/helloThere", (req, res) => {
+//     res.send("Why hello there!");
+// });
+// app.listen(`Listening on ${PORT}`)
 
-app.post("@", () => {
-    req.send("🥭 is 🔥")
+app.post("/postEmoji", (req, res) => {
+    res.send("🥭 is 🔥")
 })
+app.listen(`Listening on ${PORT}`)
 
-post.app(app, () => {
-    res.send("I wonder what's wrong with this route 🤔?")
-})
+// app.post("/wrongRoute", (req, res) => {
+//     res.send("I wonder what's wrong with this route 🤔?")
+// })
+// app.listen(`Listening on ${PORT}`)
 
-app.get( (req,res) => {
-    res.send("Happy 🐶 loves yummy dog food!")
-})
+// app.get("/dogFood", (req,res) => {
+//     res.send("Happy 🐶 loves yummy dog food!")
+// })
+// app.listen(`Listening on ${PORT}`)
 
-app("/fruitsmoothie",() => {
-    res.send()
-    res.send("A 🥭, 🍍, 🍓 make a wonderful smoothie!")
-})
+// app.get("/fruitsmoothie",(req, res) => {
+//     res.send("A 🥭, 🍍, 🍓 make a wonderful smoothie!")
+// })
+// app.listen(`Listening on ${PORT}`)
 
-app.listen(PORT, () => {
-    console.log(`Listening on port ${PORT}`)
-})
+// app.post("/lastOne", (req, res) => {
+//     res.send("I think you've got it!")
+// })
+// app.listen(`Listening on port ${PORT}`)
